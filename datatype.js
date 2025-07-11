@@ -6,15 +6,13 @@ console.log(typeof petName + '- ' + 'My pet name is ' +petName)
 }
 console.log(typeof petName + '- ' + 'My pet name is ' + petName + 'Fruit name is ' + fruit)
 
-// Number (Integer and Float)
+// Number (Integer)
 function showNumber() {
-    let age = 30;         
-    let weight = 12.5;    
+    let age = 30;           
     console.log(typeof age + ' - Age: ' + age);
-    console.log(typeof weight + ' - Weight: ' + weight);
+    
 }
 showNumber();
-
 
 // String
 function Myname() {
