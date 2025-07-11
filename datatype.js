@@ -1,77 +1,63 @@
-let petName = 'Rocky' 
+let petName = 'Rocky' // Global variable
 myFunction()
 function myFunction() {
-fruit = 'apple'; 
+fruit = 'apple'; // Considered global
 console.log(typeof petName + '- ' + 'My pet name is ' +petName)
 }
 console.log(typeof petName + '- ' + 'My pet name is ' + petName + 'Fruit name is ' + fruit)
 
-
-
-function showNumberTypes() {
-    let age = 30;
-    let weight = 12.5;
+// Number (Integer and Float)
+function showNumber() {
+    let age = 30;         
+    let weight = 12.5;    
     console.log(typeof age + ' - Age: ' + age);
     console.log(typeof weight + ' - Weight: ' + weight);
 }
+showNumber();
 
 
-function showStringType() {
-    let name = "Rocky";
+// String
+function Myname() {
+    let name = "Thembeka";
     console.log(typeof name + ' - Name: ' + name);
 }
 
+Myname();
 
-function showBooleanType() {
-    let isPet = true;
-    console.log(typeof isPet + ' - Is it a pet? ' + isPet);
+//Boolean
+function checkIsAdult() {
+    let age = 20;
+    let isAdult = age >= 18;
+    console.log(typeof isAdult + ' - Is adult? ' + isAdult);
 }
+checkIsAdult();
 
-
-function showUndefinedType() {
-    let notSet;
+// undefined
+function missinginfo() {
+    let notSet; // Variable declared but no value assigned
     console.log(typeof notSet + ' - This variable is declared but not defined');
 }
+missinginfo();
 
-
-function showNullType() {
+//null
+function empty() {
     let emptyValue = null;
-    console.log(typeof emptyValue + ' - Null value');
+    console.log(emptyValue,'this is an emptyValue:',);
+    console.log( typeof emptyValue,'Type of emptyValue:',);
 }
+empty();
 
-
-function showObjectType() {
-    let pet = {
-        name: "Rocky",
-        weight: 12.5,
-        type: "dog"
-    };
-    console.log(typeof pet + ' - Pet object: ' + JSON.stringify(pet));
-}
-
-
-function showArrayType() {
-    let colors = ['red', 'blue', 'green'];
+// object
+Deco()
+function Deco() {
+    let colors = ['red', 'blue', 'green', 'yellow'];
     console.log(typeof colors + ' - Favorite colors: ' + colors.join(', '));
 }
 
-
-function showFunctionType() {
-    function greet() {
-        return "Hello!";
-    }
-    console.log(typeof greet + ' - Greeting: ' + greet());
-}
-
-
-function showSymbolType() {
-    let id = Symbol('id');
-    console.log(typeof id + ' - Symbol');
-}
-
-
-function showBigIntType() {
+// BigInt
+Bignumbers()
+function Bignumbers() {
     let bigNumber = 1234567890123456789012345678901234567890n;
-    console.log(typeof bigNumber + ' - BigInt number');
+    console.log(typeof bigNumber + ' - BigInteger number');
 }
 
